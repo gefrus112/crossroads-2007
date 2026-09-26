@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossroads (2007) — a classic Roblox rebuild</title>
+<meta name="description" content="A fan-made rebuild of the classic 2007 Roblox Crossroads map: stud baseplate, stone bridge, brick house, lake, watchtower, swords and rocket launchers. Download the .rbxlx and publish it, or explore a live web preview.">
+<meta property="og:title" content="Crossroads (2007) — classic Roblox rebuild">
+<meta property="og:description" content="The 2007 classic, rebuilt brick by brick. Live web preview + downloadable Roblox place file.">
+<meta property="og:image" content="assets/img/shot-overview.png">
+<meta name="theme-color" content="#2f5c94">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;rect width='16' height='16' fill='%23c4281c'/&gt;&lt;rect x='4' y='4' width='8' height='8' fill='%23f5cd30'/&gt;&lt;/svg&gt;">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="page">
+
+  <!-- ============ masthead (2007 vibes) ============ -->
+  <div class="masthead">
+    <span class="logo-studs"><i class="r"></i><i class="y"></i><i class="g"></i><i class="b"></i></span>
+    <span class="logo-word">Crossroads <small>classic Roblox rebuild · est. 2007</small></span>
+    <span class="spacer"></span>
+    <span class="badge">FAN PROJECT</span>
+    <span class="badge">100% STUD-CERTIFIED</span>
+  </div>
+
+  <nav class="navbar">
+    <a href="#preview">▶ Play Preview</a>
+    <a href="#gallery">Screenshots</a>
+    <a href="#map">Map Guide</a>
+    <a href="#inside">What's Inside</a>
+    <a href="#download">Download</a>
+    <a href="#publish">Publish to Roblox</a>
+    <a href="https://github.com/gefrus112/crossroads-2007">Source</a>
+  </nav>
+
+  <div class="content">
+
+    <!-- ============ hero ============ -->
+    <div class="hero">
+      <div>
+        <h1>CROSSROADS <span class="yr">(2007)</span></h1>
+        <p class="sub">Four roads meet in the middle of nowhere. A stone bridge, a red brick house,
+        a corner shop, a lake, a watchtower — and a sword waiting on top of it.
+        The classic map you remember, rebuilt brick by brick.</p>
+        <div class="btnrow">
+          <a class="btn primary" href="#preview">▶ Explore it in your browser</a>
+          <a class="btn blue" href="Crossroads.rbxlx" download>⬇ Download Crossroads.rbxlx</a>
+          <a class="btn" href="#publish">Publish it on Roblox</a>
+        </div>
+        <div class="chips">
+          <span class="chip">0 meshes</span>
+          <span class="chip">0 unions</span>
+          <span class="chip">0 terrain voxels</span>
+          <span class="chip">Plastic &amp; Slate only</span>
+          <span class="chip">Legacy 2007 lighting</span>
+          <span class="chip">~500 × 500 studs</span>
+          <span class="chip">Studs: ON</span>
+        </div>
+      </div>
+      <div class="side">
+        <b>Place name:</b> Crossroads<br>
+        <b>Era target:</b> mid-2007<br>
+        <b>Spawn:</b> crossroads center pad<br>
+        <b>Respawn:</b> 5 seconds<br>
+        <b>Tools:</b> Classic Sword ×2,<br>&nbsp;&nbsp;Rocket Launcher ×2<br>
+        <b>Leaderboard:</b> KOs / Wipeouts<br>
+        <b>Hazards:</b> red barrels (!)
+      </div>
+    </div>
+
+    <!-- ============ live preview ============ -->
+    <section id="preview">
+      <h2 class="section-title">Live 3D preview</h2>
+      <div class="viewer">
+        <canvas id="view" data-map="assets/map.json"></canvas>
+        <div id="view-overlay">
+          <div class="overlay-card">
+            <h2>Crossroads 2007</h2>
+            <div>Walk the map exactly as it loads in the game.<br>
+            Find the bridge, the house, the lake, the tower.</div>
+            <p class="overlay-hint">Click to explore (pointer lock)</p>
+          </div>
+        </div>
+      </div>
+      <div class="viewer-note">
+        🖱️ Click the preview, then <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to walk,
+        mouse to look, <kbd>SPACE</kbd> to jump, <kbd>SHIFT</kbd> to run, <kbd>ESC</kbd> to release the mouse.
+        The preview renders the same geometry as the place file — blocky parts, classic pine trees, blue sky, white clouds.
+      </div>
+    </section>
+
+    <!-- ============ gallery ============ -->
+    <section id="gallery">
+      <h2 class="section-title">Screenshots</h2>
+      <div class="gallery">
+        <figure><img src="assets/img/shot-spawn.png" alt="Spawn at the crossroads with the Welcome to ROBLOX sign"><figcaption>The crossroads spawn &amp; the Welcome sign</figcaption></figure>
+        <figure><img src="assets/img/shot-bridge.png" alt="The grey stone bridge crossing the road"><figcaption>Stone bridge with stepped corbel arch</figcaption></figure>
+        <figure><img src="assets/img/shot-house.png" alt="Two-story red brick house"><figcaption>Red brick two-story house + mailbox</figcaption></figure>
+        <figure><img src="assets/img/shot-lake.png" alt="Lake with island pine tree"><figcaption>The lake: island pine, stepping stones, a red barrel…</figcaption></figure>
+        <figure><img src="assets/img/shot-tower.png" alt="Watchtower with flag"><figcaption>Watchtower — sword up top, climb the truss</figcaption></figure>
+        <figure><img src="assets/img/shot-overview.png" alt="Aerial view of the whole classic Crossroads map"><figcaption>The whole map, 512×512 studs</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ map ============ -->
+    <section id="map">
+      <h2 class="section-title">Map guide</h2>
+      <div class="mapwrap">
+        <img src="assets/img/map-topdown.svg" alt="Top-down map of Crossroads">
+        <ul class="poi">
+          <li><b>Spawn pad</b> — dead center of the crossroads, classic white swirl pad.</li>
+          <li><b>Welcome sign</b> — “Welcome to ROBLOX!” billboard with the classic logo.</li>
+          <li><b>Stone bridge</b> — slate-grey corbel arch over the east–west road. Rocket Launcher on the deck.</li>
+          <li><b>Brick house</b> — two stories, glass windows, spiral stairs, porch. Sword on the porch.</li>
+          <li><b>Corner shop</b> — tan building with rooftop sign and crates.</li>
+          <li><b>Lake</b> — classic blue “water” disk, island pine, Rocket Launcher #2.</li>
+          <li><b>Watchtower</b> — climb the truss ladder, grab the flag view and Sword #2.</li>
+          <li><b>Trampoline</b> — 120-stud bounce, right next to spawn.</li>
+          <li><b>Red barrels</b> — hit one and you WILL feel like it's 2007 again.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ features ============ -->
+    <section id="inside">
+      <h2 class="section-title">What's inside</h2>
+      <div class="cols">
+        <div class="panel">
+          <h3>Map &amp; props</h3>
+          <ul>
+            <li>Studded bright-green baseplate, 512×512 studs</li>
+            <li>Two grey roads, white dashed center lines, yellow edge lines</li>
+            <li>Slate stone bridge with stepped arches + railings</li>
+            <li>Two-story red brick house (windows, door, furniture, spiral stairs)</li>
+            <li>Tan/beige corner shop with flat roof + sign</li>
+            <li>Lake with island, stepping stones &amp; slate rim</li>
+            <li>Watchtower with decks, railings, truss ladder, red flag</li>
+            <li>Classic pine trees (cylinder trunk + disc leaves)</li>
+            <li>Grass hills, slate boulders, wooden fences</li>
+            <li>Traffic cones, explosive red barrels, mailbox, trampoline, skate ramps</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Period-correct details</h3>
+          <ul>
+            <li><b>No meshes. No unions. No CSG.</b> Parts, Wedges, Cylinders and Balls only.</li>
+            <li>Plastic + Slate materials only — zero PBR</li>
+            <li>Legacy lighting technology, global shadows off, 2:00 PM</li>
+            <li>Classic <code>sky512</code> skybox (blue sky, white clouds)</li>
+            <li>White spawn pad at the crossroads, 5-second respawns</li>
+            <li>Classic-style leaderboard: <b>KOs</b> and <b>Wipeouts</b></li>
+            <li>Default chat, default camera, default character — no custom UI</li>
+            <li>No ProximityPrompts, no StreamingEnabled, no modern knobs</li>
+            <li>Touch-to-pickup tools that respawn on their pads</li>
+            <li>Swords lunge, rockets break joints, barrels chain-explode</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ download ============ -->
+    <section id="download">
+      <h2 class="section-title">Download</h2>
+      <p>The whole game is a single place file — no dependencies, no packages:</p>
+      <div class="btnrow">
+        <a class="btn primary" href="Crossroads.rbxlx" download>⬇ Crossroads.rbxlx</a>
+        <a class="btn" href="https://github.com/gefrus112/crossroads-2007/raw/refs/heads/arena/01a0dba1-crossroads-2007/Crossroads.rbxlx">raw link</a>
+        <a class="btn" href="https://github.com/gefrus112/crossroads-2007">view source on GitHub</a>
+      </div>
+      <p class="viewer-note">The place is generated from <code>tools/generate-place.mjs</code> — tweak the map in code and rebuild with <code>node tools/generate-place.mjs</code>.</p>
+    </section>
+
+    <!-- ============ publish ============ -->
+    <section id="publish">
+      <h2 class="section-title">Play it for real: publish to Roblox</h2>
+      <ol class="steps">
+        <li><b>Download <code>Crossroads.rbxlx</code></b> (button above) and open Roblox Studio.</li>
+        <li><b>File → Open…</b> and pick the file. The whole map loads — check the Welcome sign, grab the sword on the house porch, blow up a barrel.</li>
+        <li><b>Test it:</b> press Play (F5). You spawn on the white pad at the crossroads. Touch a tool on its grey pad to pick it up.</li>
+        <li><b>File → Publish to Roblox As…</b> → create a new experience and name it <code>Crossroads</code>.</li>
+        <li>On the experience page set it <b>Public</b>. Done — share the link like it's September 2007.</li>
+      </ol>
+      <p class="viewer-note">
+        Notes: modern Roblox requires FilteringEnabled, so the classic no-filtering behavior is emulated in the tool scripts instead.
+        The spawn-pad and logo decals reference classic re-uploaded images; if one ever moderates out, swap the decal ID in the generator and rebuild.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- ============ footer ============ -->
+  <div class="footer">
+    <div class="studline"></div>
+    <b>Crossroads (2007)</b> is a fan-made recreation built for nostalgia. It is not affiliated with, endorsed by,
+    or sponsored by Roblox Corporation. ROBLOX and Roblox are trademarks of Roblox Corporation.
+    The original Crossroads was one of the earliest iconic Roblox maps; this rebuild uses only simple parts,
+    exactly like builders had back then. · Made with ~530 anchored parts and zero shame about it.
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/preview.js" defer></script>
+</body>
+</html>
